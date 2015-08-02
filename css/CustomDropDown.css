@@ -1,0 +1,59 @@
+﻿  .ctrl-container {
+            width: 300px;
+            position: relative;
+            font-size:small;
+        }
+
+        .ctrl-controls {
+            border: 1px solid #808080;
+            height: 30px;
+        }
+
+        .ctrl-icons {
+            float: right;
+            width: 40px;
+            padding:.25em;
+        }
+
+        .ctrl-label {
+            width: 250px;
+            border-right: 1px solid #808080;
+            height: 29px;
+            padding:.3em .25em;
+        }
+
+        .ctrl-dropcontainer {
+            width: 100%;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            z-index: 9999;
+            border: 1px solid #808080;
+        }
+
+            .ctrl-dropcontainer .ctrl-search {
+                width: 95%;
+                margin: .5em;
+            }
+
+            .ctrl-dropcontainer ul {
+                width: 100%;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .ctrl-dropcontainer ul a{
+                text-decoration:none;
+                color:#000;
+                cursor:pointer;
+            }
+
+            .ctrl-dropcontainer ul li:hover{
+                background-color:#eae7e7;
+            }
+
+                .ctrl-dropcontainer ul li {
+                    width: 100%;
+                    padding-left: 1em;
+                }

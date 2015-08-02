@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/CustomDropDown.css" rel="stylesheet" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/CustomDropDown.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-xs-4">
+            <div id="form1" class="ctrl-container"></div>
+        </div>
+        <div class="col-xs-4">
+            <div id="form2" class="ctrl-container"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#form1").CustomDrop({
+                ctrlList: [{ value: 1, text: "Minor" }, { value: 2, text: "Moderate" }, { value: 3, text: "High" }, { value: 4, text: "Major" }, { value: 5, text: "Extreme" }],
+                ctrlId: "StatusId"
+            });
+
+            $("#form2").CustomDrop({
+                ctrlList: [{ value: 3, text: "Old" }, { value: 4, text: "New" }],
+                ctrlId: "TypeId",
+                ctrlSelected: 4,
+                ctrlLabelText: "[Please Select Type]"
+            }).css({ 'background': 'yellow', 'color': '#000' });
+        });
+    </script>
+</body>
+</html>
