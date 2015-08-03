@@ -1,6 +1,6 @@
 # CustomDrop
 
-Custom Dropdown filter is jquery plugin that allows you to add a filterable dropdown your within your html.
+Custom Dropdown filter is jquery plugin that allows you to add a filterable dropdown within your html.
 
 # Basic Usage
 html
